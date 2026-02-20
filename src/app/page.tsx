@@ -4,7 +4,7 @@ import Card from "@/components/Card";
 import Steps from "@/components/Steps";
 import BulletSection from "@/components/BulletSection";
 import CTAForm from "@/components/CTAForm";
-import Link from "next/link";
+import TrustPrinciples from "@/components/TrustPrinciples";
 
 const howSteps = [
   {
@@ -114,19 +114,9 @@ export default function Home() {
       <Section
         id="trust"
         title="Designed to prevent extractive data deals."
+        subtitle="Most collaborations today either move too fast (and leak risk) or move too slow (and never ship). VERITIR is built around explicit permissions, controlled execution, and audit-grade evidence—so both sides can collaborate without surprises."
       >
-        <p className="max-w-2xl leading-relaxed text-neutral-400">
-          Most collaborations today either move too fast (and leak risk) or move
-          too slow (and never ship). VERITIR is built around explicit
-          permissions, controlled execution, and audit-grade evidence—so both
-          sides can collaborate without surprises.
-        </p>
-        <Link
-          href="/trust"
-          className="mt-6 inline-block text-sm font-medium text-accent transition-opacity hover:opacity-80"
-        >
-          Read our Trust principles &rarr;
-        </Link>
+        <TrustPrinciples />
       </Section>
 
       {/* Contact / CTA */}

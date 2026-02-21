@@ -1,0 +1,28 @@
+---
+interface Props {
+  id?: string;
+  title: string;
+  subtitle?: string;
+  border?: boolean;
+}
+
+const { id, title, subtitle, border = true } = Astro.props;
+---
+
+<section
+  id={id}
+  class:list={[
+    "scroll-mt-20 py-20 md:py-28",
+    border && "border-t border-border",
+  ]}
+>
+  <div class="mx-auto max-w-6xl px-6">
+    <h2 class="text-3xl font-bold tracking-tight md:text-4xl">{title}</h2>
+    {subtitle && (
+      <p class="mt-4 max-w-2xl text-lg text-neutral-400">{subtitle}</p>
+    )}
+    <div class="mt-12">
+      <slot />
+    </div>
+  </div>
+</section>

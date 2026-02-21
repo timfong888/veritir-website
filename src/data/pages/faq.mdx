@@ -1,19 +1,16 @@
-import type { Metadata } from "next";
+---
+title: "FAQ — VERITIR"
+description: "Frequently asked questions about VERITIR pilots, data readiness, governance, and pricing."
+---
 
-export const metadata: Metadata = {
-  title: "FAQ — VERITIR",
-  description:
-    "Frequently asked questions about VERITIR pilots, data readiness, governance, and pricing.",
-};
-
-const faqs = [
+export const faqs = [
   {
     q: "What is this pilot?",
     a: "A short, structured engagement that assesses whether a research dataset can be productized for foundation-model evaluation, benchmarking, and (where appropriate) licensing.",
   },
   {
     q: "What do you actually deliver?",
-    a: `A lightweight "readiness pack" that includes:`,
+    a: 'A lightweight "readiness pack" that includes:',
     bullets: [
       "Data quality + completeness assessment",
       "Labeling review (explicit + implicit outcome labels)",
@@ -37,11 +34,11 @@ const faqs = [
   },
   {
     q: "How do you handle sensitive or regulated data?",
-    a: "We start with strict guardrails: sensitive data requires clear consent/authorization, strong access controls, and often a restricted \"evaluation-only\" model. If the rights or governance can't be made clean, it's out of scope for licensing.",
+    a: 'We start with strict guardrails: sensitive data requires clear consent/authorization, strong access controls, and often a restricted "evaluation-only" model. If the rights or governance can\'t be made clean, it\'s out of scope for licensing.',
   },
   {
     q: "Why not just send the data directly to an AI lab?",
-    a: "Because \"direct\" deals often fail on the basics: unclear rights, mixed sponsorship/collaboration terms, missing provenance, privacy exposure, and inconsistent pricing. A governance layer makes the dataset safe, contractable, and repeatable.",
+    a: 'Because "direct" deals often fail on the basics: unclear rights, mixed sponsorship/collaboration terms, missing provenance, privacy exposure, and inconsistent pricing. A governance layer makes the dataset safe, contractable, and repeatable.',
   },
   {
     q: "Are you selling patents or inventions?",
@@ -53,7 +50,7 @@ const faqs = [
   },
   {
     q: 'What does "labels" mean here?',
-    a: "Anything that connects inputs to outcomes\u2014e.g., \"worked/didn't,\" yields, scores, phenotypes, performance metrics, pass/fail gates, or expert judgments embedded in spreadsheets and lab workflows.",
+    a: 'Anything that connects inputs to outcomes\u2014e.g., "worked/didn\'t," yields, scores, phenotypes, performance metrics, pass/fail gates, or expert judgments embedded in spreadsheets and lab workflows.',
   },
   {
     q: "What does success look like?",
@@ -84,50 +81,32 @@ const faqs = [
   },
 ];
 
-export default function FAQPage() {
-  return (
-    <section className="py-20 md:py-28">
-      <div className="mx-auto max-w-3xl px-6">
-        <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
-          Frequently asked questions
-        </h1>
-        <p className="mt-4 text-lg text-neutral-400">
-          Common questions about VERITIR pilots, data readiness, governance, and
-          pricing.
-        </p>
+<section class="py-20 md:py-28">
+  <div class="mx-auto max-w-3xl px-6">
+    <h1 class="text-4xl font-bold tracking-tight md:text-5xl">Frequently asked questions</h1>
+    <p class="mt-4 text-lg text-neutral-400">Common questions about VERITIR pilots, data readiness, governance, and pricing.</p>
 
-        <div className="mt-16 space-y-12">
-          {faqs.map((faq) => (
-            <div key={faq.q}>
-              <h2 className="text-xl font-semibold text-white">{faq.q}</h2>
-              <p className="mt-3 text-neutral-300 leading-relaxed">{faq.a}</p>
-              {faq.bullets && (
-                <ul className="mt-3 space-y-2 pl-1">
-                  {faq.bullets.map((b) => (
-                    <li key={b} className="flex items-start gap-3">
-                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-                      <span className="text-neutral-300">{b}</span>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          ))}
+    <div class="mt-16 space-y-12">
+      {faqs.map((faq) => (
+        <div>
+          <h2 class="text-xl font-semibold text-white">{faq.q}</h2>
+          <p class="mt-3 text-neutral-300 leading-relaxed">{faq.a}</p>
+          {faq.bullets && (
+            <ul class="mt-3 space-y-2 pl-1">
+              {faq.bullets.map((b) => (
+                <li class="flex items-start gap-3">
+                  <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                  <span class="text-neutral-300">{b}</span>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
+      ))}
+    </div>
 
-        <div className="mt-20 border-t border-border pt-12">
-          <p className="text-neutral-400">
-            Have a question not covered here?{" "}
-            <a
-              href="mailto:tim@veritir.com"
-              className="text-accent hover:underline"
-            >
-              Reach out directly
-            </a>
-            .
-          </p>
-        </div>
-      </div>
-    </section>
-  );
-}
+    <div class="mt-20 border-t border-border pt-12">
+      <p class="text-neutral-400">Have a question not covered here?{" "}<a href="mailto:tim@veritir.com" class="text-accent hover:underline">Reach out directly</a>.</p>
+    </div>
+  </div>
+</section>

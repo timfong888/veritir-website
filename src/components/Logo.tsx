@@ -9,7 +9,7 @@ export default function Logo() {
         alt="VERITIR"
         width={150}
         height={40}
-        className="h-8 w-auto"
+        className="h-5 w-auto"
         priority
         unoptimized
       />

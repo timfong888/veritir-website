@@ -1,73 +1,28 @@
-"use client";
-
-import { useActionState } from "react";
-import { submitContact, type ContactState } from "@/app/actions/contact";
-import { cn } from "@/lib/utils";
-
-const initialState: ContactState = { success: false, message: "" };
-
-const inputClass =
-  "w-full rounded-md border border-border bg-muted px-4 py-3 text-sm text-white placeholder:text-neutral-500 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent";
-
 export default function CTAForm() {
-  const [state, formAction, isPending] = useActionState(
-    submitContact,
-    initialState
-  );
-
-  if (state.success) {
-    return (
-      <div className="rounded-xl border border-accent/30 bg-accent/5 p-8 text-center">
-        <p className="text-lg font-medium text-accent">{state.message}</p>
-      </div>
-    );
-  }
-
   return (
-    <form action={formAction} className="max-w-lg space-y-5">
-      {state.message && !state.success && (
-        <p className="text-sm text-red-400">{state.message}</p>
-      )}
-      <input
-        name="name"
-        type="text"
-        placeholder="Name *"
-        required
-        className={inputClass}
-      />
-      <input
-        name="email"
-        type="email"
-        placeholder="Email *"
-        required
-        className={inputClass}
-      />
-      <input
-        name="organization"
-        type="text"
-        placeholder="Organization *"
-        required
-        className={inputClass}
-      />
-      <select name="role" required className={cn(inputClass, "appearance-none")}>
-        <option value="">Role *</option>
-        <option value="Lab">Lab</option>
-        <option value="Model partner">Model partner</option>
-        <option value="Other">Other</option>
-      </select>
-      <textarea
-        name="message"
-        placeholder="Message (optional)"
-        rows={4}
-        className={inputClass}
-      />
-      <button
-        type="submit"
-        disabled={isPending}
-        className="rounded-md bg-accent px-6 py-3 text-sm font-medium text-black transition-opacity hover:opacity-90 disabled:opacity-50"
+    <div className="max-w-lg space-y-6">
+      <p className="text-lg text-neutral-300">
+        Reach out to start a conversation.
+      </p>
+      <a
+        href="mailto:tim@veritir.com"
+        className="inline-flex items-center gap-3 rounded-md border border-border bg-muted px-6 py-4 text-lg font-medium text-white transition-colors hover:border-accent hover:text-accent"
       >
-        {isPending ? "Sending..." : "Request early access"}
-      </button>
-    </form>
+        <svg
+          className="h-5 w-5 shrink-0"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+          />
+        </svg>
+        tim@veritir.com
+      </a>
+    </div>
   );
 }

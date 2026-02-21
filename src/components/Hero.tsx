@@ -7,20 +7,21 @@ export default function Hero() {
         {/* Text column */}
         <div>
           <h1 className="text-4xl font-bold leading-tight tracking-tight md:text-5xl lg:text-6xl">
-            Private research,
+            Your research data is already valuable.
             <br />
-            licensed learning.
+            <span className="text-accent">We help you prove it.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-neutral-400">
-            VERITIR is the safe intermediary between university research labs and
-            foundation models&mdash;so models can learn from high-value research
-            work without labs relinquishing custody, IP, or publication freedom.
+            VERITIR helps university labs package high-value research datasets
+            into governed assets that enable model evaluation, benchmarking, and
+            selective licensing&mdash;generating recurring revenue while
+            preserving publication freedom and compliance.
           </p>
           <ul className="mt-6 space-y-3">
             {[
-              "Clean-room collaboration (not public release)",
-              "Permitted-use controls + boundary-enforced execution",
-              "Audit logs & provenance for confidence and continuity",
+              "Evaluation benchmarks & leaderboards (not data dumps)",
+              "Governed access with permitted-use controls",
+              "Non-dilutive revenue for labs—without slowing publication",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">
                 <svg

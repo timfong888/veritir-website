@@ -5,11 +5,12 @@ import Logo from "./Logo";
 import { cn } from "@/lib/utils";
 
 const links = [
-  { label: "How it works", href: "#how" },
-  { label: "For Labs", href: "#labs" },
-  { label: "For Model Partners", href: "#partners" },
-  { label: "Trust", href: "#trust" },
-  { label: "Contact", href: "#contact" },
+  { label: "How it works", href: "/#how" },
+  { label: "For Labs", href: "/#labs" },
+  { label: "For Model Partners", href: "/#partners" },
+  { label: "Trust", href: "/#trust" },
+  { label: "FAQ", href: "/faq" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export default function Navbar() {

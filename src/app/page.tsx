@@ -40,7 +40,10 @@ export default function Home() {
       <Hero />
 
       {/* What VERITIR is not */}
-      <Section title="Not a data dump. Not a labeling shop.">
+      <Section
+        title="Not a data dump. Not a labeling shop."
+        subtitle="Foundation models need domain-specific, high-quality data. University researchers generate it—but handing it over would be a one-way extractive relationship. VERITIR exists to bridge that gap."
+      >
         <ul className="space-y-4">
           {[
             "Not 'make it public so models can scrape it'",

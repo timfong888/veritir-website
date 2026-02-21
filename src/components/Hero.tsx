@@ -7,14 +7,12 @@ export default function Hero() {
         {/* Text column */}
         <div>
           <h1 className="text-4xl font-bold leading-tight tracking-tight md:text-5xl lg:text-6xl">
-            Your research data is already valuable.
-            <br />
-            <span className="text-accent">We help you prove it.</span>
+            Transform your research artifacts and datasets into funding.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-neutral-400">
             VERITIR helps university labs package high-value research datasets
             into governed assets that enable model evaluation, benchmarking, and
-            selective licensing&mdash;generating recurring revenue while
+            selective licensing&mdash;generating revenue while
             preserving publication freedom and compliance.
           </p>
           <ul className="mt-6 space-y-3">

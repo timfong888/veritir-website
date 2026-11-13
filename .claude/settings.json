@@ -1,0 +1,14 @@
+{
+  "extraKnownMarketplaces": {
+    "garden-skills": {
+      "source": { "source": "github", "repo": "ConardLi/garden-skills" }
+    },
+    "interfaces": {
+      "source": { "source": "github", "repo": "jakubkrehel/skills" }
+    }
+  },
+  "enabledPlugins": {
+    "web-design-skills@garden-skills": true,
+    "interfaces@interfaces": true
+  }
+}

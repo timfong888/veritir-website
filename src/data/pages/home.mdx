@@ -1,103 +1,46 @@
 ---
-title: "VERITIR — Private research, licensed learning."
-description: "VERITIR is the safe intermediary between university research labs and foundation models—so models can learn from high-value research work without labs relinquishing custody, IP, or publication freedom."
+title: "Veritir — We're long higher ed."
+description: "Veritir helps colleges and universities move at the speed the moment demands, building on the trust, faculty, research and communities they already have."
 ---
-import Hero from '../../components/Hero.astro';
-import Section from '../../components/Section.astro';
-import Cards from '../../components/Cards.astro';
-import Card from '../../components/Card.astro';
-import Steps from '../../components/Steps.astro';
-import Step from '../../components/Step.astro';
-import BulletList from '../../components/BulletList.astro';
-import NegationList from '../../components/NegationList.astro';
-import TrustPrinciples from '../../components/TrustPrinciples.astro';
-import CTAForm from '../../components/CTAForm.astro';
+import RailSection from '../../components/RailSection.astro';
 
-<Hero />
+<div class="hero grid">
+  <div class="rail" aria-hidden="true"></div>
+  <div>
+    <h1>We're long <em>higher ed.</em></h1>
+    <p>Colleges and universities have long transformed raw talent into knowledge, livelihoods and civic life. Despite rumors of their early demise, we're betting on their next century, and we're here to help them move at the speed the moment demands.</p>
+  </div>
+</div>
 
-<Section
-  title="The most valuable part of your research never makes it into the patent or the paper."
-  subtitle="Negative results. Protocol variations. Calibration data. Instrument noise characteristics. Labeling decisions buried in spreadsheets. In modern research—biomed, materials, quantum, physics—the signal that matters most lives in artifacts that patents don't capture and publications don't include."
->
-  <p class="text-lg font-medium text-accent">VERITIR turns these shadow assets into governed, revenue-generating data products.</p>
-</Section>
+<RailSection id="manifesto" n="01" label="Manifesto" class="manifesto">
+  <p class="lead">In times of massive change, durable institutions with a long-term view matter.</p>
+  <p>But a long-term view pointed at the wrong destination misses the mark.</p>
+  <p>For generations, colleges and universities have been the foundation for intellectual, civic and commercial life. As society changes faster and less predictably, that same durability and long horizon can become a liability.</p>
+  <p>Alternatives keep multiplying, many of them built by technology leaders in Silicon Valley who now set the pace of change. As AI reshapes knowledge work and modern research, the once-stable path from degree to career must be redrawn or lead nowhere.</p>
+  <p class="turn">Veritir <em>unlocks</em> the enduring value of colleges and universities: the trust they hold, the faculty and research they gather, and the communities they convene.</p>
+  <p>“If we want things to stay as they are, things will have to change.” The institutions that move while they are still strong will set the terms. We're here to help them move.</p>
+</RailSection>
 
-<Section title="Not a data dump. Not a labeling shop.">
-  <NegationList items={[
-    "Not 'make it public so models can scrape it'",
-    "Not commodity data labeling",
-    "Not a one-time data sale",
-    "Not blanket model access",
-  ]} />
-</Section>
+<RailSection id="conviction" label="Conviction" class="pull">
+  <blockquote>Tech moves fast and breaks things. <span>It cannot build generations of trust.</span></blockquote>
+</RailSection>
 
-<Section title="Turn research artifacts into governed, licensable data products.">
-  <Cards>
-    <Card
-      title="Unpublished research artifacts"
-      description="Drafts, intermediate results, negative results, lab notes, datasets, protocols, and code—kept private by default."
-    />
-    <Card
-      title="Clean-room licensing interface"
-      description="Models evaluate and benchmark through a governed environment with explicit permitted use, controlled execution, and constrained outputs. Raw data never leaves."
-    />
-    <Card
-      title="Outcome supervision (optional)"
-      description="When human feedback is needed, it's focused on outcomes and evaluation—not turning labs into labeling factories."
-    />
-  </Cards>
-</Section>
+<RailSection id="principles" n="02" label="Principles">
+  <ol class="principles">
+    <li><span class="n">01</span><h3>Leverage what you've built.</h3><p>Trust, faculty, research, alumni and existing platforms are underused assets. Innovate on this foundation.</p></li>
+    <li><span class="n">02</span><h3>Startup speed. Academic standards.</h3><p>Act on real demand from learners and employers. Launch in weeks, not semesters.</p></li>
+    <li><span class="n">03</span><h3>Prove value in small steps.</h3><p>Pilot, measure, then scale. Small, reversible experiments move institutions forward without putting shared governance at risk.</p></li>
+    <li><span class="n">04</span><h3>Enroll once. Learn for life.</h3><p>People will return to learn many times across a career. Universities are well placed to be where they come back.</p></li>
+  </ol>
+</RailSection>
 
-<Section id="how" title="How it works">
-  <Steps>
-    <Step n={1} title="Identify" description="Surface the high-value research artifacts that sit outside patents and papers: datasets with metadata, outcome labels, negative results, protocols." />
-    <Step n={2} title="Package" description="Structure raw lab outputs into governed data products—benchmarks, evaluation sets, fine-tuning packs—with clear rights, provenance, and permitted-use terms." />
-    <Step n={3} title="Connect" description="Match packaged assets to qualified buyers: AI labs seeking domain evaluation, pharma needing model validation, device companies building specialized models." />
-    <Step n={4} title="Earn & iterate" description="Generate recurring revenue through benchmark subscriptions, licensed access, and sponsored evaluations. Audit trails prove compliance at every step." />
-  </Steps>
-</Section>
-
-<Section
-  id="labs"
-  title="For labs: new revenue from the research you've already done."
-  subtitle="Your lab generates datasets, protocols, and outcome data that are uniquely valuable—hard to recreate, expensive to reproduce, and rich with implicit labels that models need. VERITIR helps you monetize these assets without disrupting your work."
->
-  <BulletList items={[
-    "Non-dilutive revenue: earn from benchmarks, licensed evaluations, and fine-tuning packs—no equity, no grants, no overhead.",
-    "Keep custody: your internal work stays non-public by default. Data never leaves without explicit consent.",
-    "Protect IP and publication freedom: collaborate without silent reuse or surprise downstream claims.",
-    "Reduce friction: a repeatable path through governance, compliance, and tech transfer review.",
-    "Support de-identification: help remove PII/PHI when required.",
-    "Academic alignment: benchmarks earn citations, leaderboards earn visibility, evaluations earn prestige.",
-  ]} />
-</Section>
-
-<Section
-  id="partners"
-  title="For model partners: domain-specific evaluation and benchmarking data you can't get elsewhere."
-  subtitle="University labs hold the gold-standard datasets in biomed, materials science, quantum, and beyond. VERITIR gives you governed access to domain-specific evaluation, benchmarking, and fine-tuning assets—without the 18-month negotiation cycle."
->
-  <BulletList items={[
-    "Evaluation benchmarks: prove your model works on gold-standard research data",
-    "Fine-tuning packs: curated, labeled data for narrow domain tasks under clear terms",
-    "Clear permitted-use terms for sensitive research work",
-    "Boundary-controlled execution and constrained outputs",
-    "Standard reporting: what ran, when, and under which permissions",
-  ]} />
-</Section>
-
-<Section
-  id="trust"
-  title="Designed to prevent extractive data deals."
-  subtitle="Most collaborations today either move too fast (and leak risk) or move too slow (and never ship). VERITIR is built around explicit permissions, controlled execution, and audit-grade evidence—so both sides can collaborate without surprises."
->
-  <TrustPrinciples />
-</Section>
-
-<Section
-  id="contact"
-  title="Bring VERITIR to your research institution."
-  subtitle="We're working with a small set of research labs and model partners to build the first governed data-asset marketplace for university research."
->
-  <CTAForm />
-</Section>
+<RailSection id="conversations" n="03" label="Conversations">
+  <div class="invite">
+    <div>
+      <span class="badge">Invite only</span>
+      <h3 class="invite-title">The Veritir Roundtable</h3>
+      <p>We are spending this year listening to leaders in continuing, professional and online education. If we have met, there may be a seat for you.</p>
+    </div>
+    <a class="textlink" href="/roundtable">About the roundtable <span class="arrow" aria-hidden="true">→</span></a>
+  </div>
+</RailSection>

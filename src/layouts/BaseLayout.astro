@@ -1,6 +1,4 @@
 ---
-import Navbar from "../components/Navbar.astro";
-import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 
 interface Props {
@@ -9,25 +7,52 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
+
+const path = Astro.url.pathname.replace(/\/$/, "") || "/";
+const links = [
+  { label: "Manifesto", href: "/" },
+  { label: "Roundtable", href: "/roundtable" },
+];
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <link rel="icon" href="/favicon.ico" />
+    <meta name="theme-color" content="#f4f6f5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f1614" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   </head>
-  <body class="antialiased">
-    <Navbar />
-    <main>
-      <slot />
-    </main>
-    <Footer />
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="wrap">
+      <header class="site">
+        <a class="wordmark wm" href="/" aria-label="Veritir home">Veritir</a>
+        <nav class="primary" aria-label="Primary">
+          {
+            links.map((l) => (
+              <a href={l.href} aria-current={path === l.href ? "page" : undefined}>
+                {l.label}
+              </a>
+            ))
+          }
+        </nav>
+      </header>
+
+      <main id="main">
+        <slot />
+      </main>
+
+      <footer class="site">
+        <span class="wm" aria-label="Veritir">Veritir</span>
+        <span>We're long higher ed.</span>
+      </footer>
+    </div>
   </body>
 </html>

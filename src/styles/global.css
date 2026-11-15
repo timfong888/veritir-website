@@ -57,7 +57,7 @@ body {
   background: var(--bg);
   color: var(--ink);
   font-family: var(--body);
-  font-size: 17.5px;
+  font-size: 1.09375rem;
   line-height: 1.6;
   letter-spacing: 0.003em;
   -webkit-font-smoothing: antialiased;
@@ -114,14 +114,14 @@ header.site {
   padding-left: 0.07em;
 }
 .wordmark {
-  font-size: 23px;
+  font-size: 1.4375rem;
   color: var(--ink);
   text-decoration: none;
 }
 nav.primary {
   display: flex;
   gap: 22px;
-  font-size: 14.5px;
+  font-size: 0.90625rem;
   font-weight: 500;
 }
 nav.primary a {
@@ -130,8 +130,10 @@ nav.primary a {
   padding-block: 6px;
   transition: color 0.2s var(--ease);
 }
-nav.primary a:hover {
-  color: var(--ink);
+@media (hover: hover) {
+  nav.primary a:hover {
+    color: var(--ink);
+  }
 }
 nav.primary a[aria-current="page"] {
   color: var(--ink);
@@ -146,7 +148,7 @@ nav.primary a[aria-current="page"] {
 }
 .rail {
   font-family: var(--mono);
-  font-size: 11.5px;
+  font-size: 0.75rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
@@ -193,7 +195,7 @@ main > :last-child {
 .hero h1 {
   font-family: var(--display);
   font-weight: 400;
-  font-size: clamp(54px, 9.4vw, 120px);
+  font-size: clamp(3.375rem, 9.4vw, 7.5rem);
   line-height: 0.94;
   margin: 0 0 30px;
   text-wrap: balance;
@@ -207,7 +209,7 @@ main > :last-child {
   max-width: 50ch;
   margin: 0;
   color: var(--muted);
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.5;
   text-wrap: pretty;
 }
@@ -239,13 +241,13 @@ main > :last-child {
 /* Manifesto */
 .manifesto p {
   max-width: 60ch;
-  font-size: 18px;
+  font-size: 1.125rem;
   margin: 0 0 1.1em;
   text-wrap: pretty;
 }
 .manifesto p.lead {
   font-family: var(--display);
-  font-size: clamp(30px, 3.8vw, 42px);
+  font-size: clamp(1.875rem, 3.8vw, 2.625rem);
   line-height: 1.12;
   letter-spacing: -0.01em;
   margin-bottom: 0.9em;
@@ -253,7 +255,7 @@ main > :last-child {
 }
 .manifesto p.turn {
   font-family: var(--display);
-  font-size: clamp(24px, 2.6vw, 30px);
+  font-size: clamp(1.5rem, 2.6vw, 1.875rem);
   line-height: 1.25;
   margin-block: 1.4em;
   max-width: 42ch;
@@ -268,7 +270,7 @@ main > :last-child {
   margin: 0;
   font-family: var(--display);
   font-style: italic;
-  font-size: clamp(34px, 5vw, 60px);
+  font-size: clamp(2.125rem, 5vw, 3.75rem);
   line-height: 1.08;
   letter-spacing: -0.01em;
   text-wrap: balance;
@@ -293,14 +295,14 @@ main > :last-child {
 }
 .principles .n {
   font-family: var(--mono);
-  font-size: 12px;
+  font-size: 0.75rem;
   letter-spacing: 0.08em;
   color: var(--accent);
 }
 .principles h3 {
   font-family: var(--display);
   font-weight: 400;
-  font-size: clamp(28px, 3vw, 34px);
+  font-size: clamp(1.75rem, 3vw, 2.125rem);
   line-height: 1.08;
   letter-spacing: -0.01em;
   margin: 6px 0 8px;
@@ -310,7 +312,7 @@ main > :last-child {
 .principles p {
   margin: 0;
   color: var(--muted);
-  font-size: 16px;
+  font-size: 1rem;
   text-wrap: pretty;
 }
 @media (hover: hover) {
@@ -328,7 +330,7 @@ main > :last-child {
 .badge {
   display: inline-block;
   font-family: var(--mono);
-  font-size: 12px;
+  font-size: 0.75rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--accent);
@@ -348,14 +350,14 @@ main > :last-child {
 .invite-title {
   font-family: var(--display);
   font-weight: 400;
-  font-size: clamp(30px, 3.4vw, 40px);
+  font-size: clamp(1.875rem, 3.4vw, 2.5rem);
   line-height: 1.05;
   margin: 10px 0;
 }
 .invite p {
   margin: 0;
   color: var(--muted);
-  font-size: 16px;
+  font-size: 1rem;
   max-width: 52ch;
   text-wrap: pretty;
 }
@@ -371,8 +373,10 @@ main > :last-child {
 .textlink .arrow {
   transition: transform 0.3s var(--ease);
 }
-.textlink:hover .arrow {
-  transform: translateX(4px);
+@media (hover: hover) {
+  .textlink:hover .arrow {
+    transform: translateX(4px);
+  }
 }
 @media (max-width: 720px) {
   .invite {
@@ -392,7 +396,7 @@ main > :last-child {
 .rt-hero h1 {
   font-family: var(--display);
   font-weight: 400;
-  font-size: clamp(44px, 7vw, 84px);
+  font-size: clamp(2.75rem, 7vw, 5.25rem);
   line-height: 1;
   margin: 0 0 20px;
   text-wrap: balance;
@@ -404,7 +408,7 @@ main > :last-child {
 .rt-hero p {
   max-width: 60ch;
   color: var(--muted);
-  font-size: 19px;
+  font-size: 1.1875rem;
   margin: 0;
   text-wrap: pretty;
 }
@@ -424,7 +428,7 @@ main > :last-child {
 }
 .facts dt {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 0.75rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--muted);
@@ -433,13 +437,13 @@ main > :last-child {
 .facts dd {
   margin: 0;
   font-family: var(--display);
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.15;
 }
 .facts dd small {
   display: block;
   font-family: var(--body);
-  font-size: 14px;
+  font-size: 0.875rem;
   color: var(--muted);
   margin-top: 4px;
 }
@@ -468,14 +472,14 @@ main > :last-child {
   padding: 16px 0;
   border-top: 1px solid var(--rule);
   font-family: var(--display);
-  font-size: 22px;
+  font-size: 1.375rem;
   line-height: 1.3;
   text-wrap: pretty;
 }
 .questions li::before {
   content: counter(q, decimal-leading-zero);
   font-family: var(--mono);
-  font-size: 12px;
+  font-size: 0.75rem;
   color: var(--accent);
   padding-top: 6px;
 }
@@ -496,7 +500,7 @@ main > :last-child {
 .schedule {
   width: 100%;
   border-collapse: collapse;
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
 .schedule th,
 .schedule td {
@@ -507,7 +511,7 @@ main > :last-child {
 }
 .schedule th {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 0.75rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--muted);
@@ -523,7 +527,7 @@ main > :last-child {
 /* Footer */
 footer.site {
   padding-block: 32px 48px;
-  font-size: 13px;
+  font-size: 0.8125rem;
   color: var(--muted);
   display: flex;
   justify-content: space-between;
@@ -531,7 +535,12 @@ footer.site {
   gap: 16px;
   flex-wrap: wrap;
 }
+footer.site .contact {
+  display: flex;
+  gap: 8px 20px;
+  flex-wrap: wrap;
+}
 footer.site .wm {
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--ink);
 }

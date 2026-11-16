@@ -1,0 +1,16 @@
+---
+/** A content section with the mono "margin rail" label on the left. */
+interface Props {
+  id: string;
+  label: string;
+  n?: string;
+  class?: string;
+}
+
+const { id, label, n, class: className } = Astro.props;
+---
+
+<section class:list={["grid", className]} aria-labelledby={id}>
+  <h2 class="rail" id={id}>{n && <span class="n">{n}</span>}{label}</h2>
+  <div><slot /></div>
+</section>

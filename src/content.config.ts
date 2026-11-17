@@ -8,6 +8,8 @@ const pages = defineCollection({
     title: z.string(),
     description: z.string(),
     ogImage: z.string().optional(),
+    // Unlisted pages: kept out of the nav and out of search indexes.
+    noindex: z.boolean().optional(),
   }),
 });
 

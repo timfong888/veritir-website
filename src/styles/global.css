@@ -544,3 +544,141 @@ footer.site .wm {
   font-size: 1rem;
   color: var(--ink);
 }
+
+/* Agentic enrollment (unlisted concept page) */
+.lead-sm {
+  font-family: var(--display);
+  font-size: clamp(1.625rem, 3.2vw, 2.125rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin: 0 0 28px;
+  max-width: 28ch;
+  text-wrap: balance;
+}
+.principles li p a,
+.prose a[href^="#src"] {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.plain {
+  margin: 0 0 1.2em;
+  padding: 0;
+  list-style: none;
+  max-width: 62ch;
+}
+.plain li {
+  padding: 10px 0;
+  border-top: 1px solid var(--rule);
+  text-wrap: pretty;
+}
+.plain li:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+.prose p.aside {
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+.prose + .scorecard,
+.prose + .questions,
+.prose + .tablewrap {
+  margin-top: 28px;
+}
+.scorecard + .prose,
+.prose.after {
+  margin-top: 28px;
+}
+.scorecard {
+  margin: 28px 0 0;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+}
+.scorecard figcaption {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.scorecard figcaption span:first-child {
+  color: var(--accent);
+}
+.scorecard ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.scorecard li {
+  display: grid;
+  grid-template-columns: 11rem 5.5rem minmax(0, 1fr);
+  gap: 6px 20px;
+  align-items: center;
+  padding: 13px 18px;
+  border-top: 1px solid var(--rule);
+}
+.scorecard li:first-child {
+  border-top: 0;
+}
+.scorecard .dim {
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+.scorecard .finding {
+  color: var(--muted);
+  font-size: 0.9375rem;
+  text-wrap: pretty;
+}
+.meter {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3px;
+}
+.meter i {
+  height: 8px;
+  background: var(--rule);
+  border-radius: 1px;
+}
+.meter[data-level="1"] i:nth-child(-n + 1),
+.meter[data-level="2"] i:nth-child(-n + 2),
+.meter[data-level="3"] i:nth-child(-n + 3),
+.meter[data-level="4"] i:nth-child(-n + 4),
+.meter[data-level="5"] i:nth-child(-n + 5) {
+  background: var(--accent);
+}
+@media (max-width: 720px) {
+  .scorecard li {
+    grid-template-columns: minmax(0, 1fr) 5.5rem;
+  }
+  .scorecard .finding {
+    grid-column: 1 / -1;
+  }
+}
+.sources {
+  margin: 36px 0 0;
+  padding: 0 0 0 1.4em;
+  max-width: 70ch;
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+.sources li {
+  padding: 3px 0;
+}
+.sources li:target {
+  color: var(--ink);
+}
+@media (max-width: 720px) {
+  .schedule.jobs td:first-child {
+    white-space: normal;
+    padding-right: 12px;
+  }
+  .schedule.jobs {
+    font-size: 0.875rem;
+  }
+}

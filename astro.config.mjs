@@ -4,10 +4,14 @@ import mdx from "@astrojs/mdx";
 import vercel from "@astrojs/vercel";
 
 export default defineConfig({
+  site: "https://veritir.com",
   integrations: [mdx()],
   adapter: vercel({ imageService: true }),
   // The old FAQ page was retired with the redesign (source kept in src/legacy).
-  redirects: { "/faq": "/" },
+  redirects: {
+    "/faq": "/",
+    "/agentic-enrollment": "/ai-agents-for-enrollment-management",
+  },
   // Tailwind is only used by the archived pages in src/legacy.
   vite: {
     plugins: [tailwindcss()],

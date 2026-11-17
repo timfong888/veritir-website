@@ -1,0 +1,25 @@
+---
+import { getEntry, render } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+// Search-facing guide. Deliberately absent from the nav and from other pages;
+// it is discoverable through public/sitemap.xml.
+const page = await getEntry("pages", "ai-agents-for-enrollment-management");
+if (!page) throw new Error('Missing content entry "ai-agents-for-enrollment-management"');
+const { Content } = await render(page);
+
+const faqLd = page.data.faq && {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: page.data.faq.map(({ q, a }) => ({
+    "@type": "Question",
+    name: q,
+    acceptedAnswer: { "@type": "Answer", text: a },
+  })),
+};
+---
+
+<BaseLayout title={page.data.title} description={page.data.description} noindex={page.data.noindex}>
+  {faqLd && <script type="application/ld+json" slot="head" set:html={JSON.stringify(faqLd)} />}
+  <Content />
+</BaseLayout>

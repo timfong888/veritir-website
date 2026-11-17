@@ -721,3 +721,20 @@ h2.lead-sm {
   font-size: 1rem;
   text-wrap: pretty;
 }
+.rt-hero p.hero-cta {
+  margin-top: 22px;
+  font-size: 1.0625rem;
+}
+.manifesto h2.lead {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(1.875rem, 3.8vw, 2.625rem);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.6em;
+  max-width: 24ch;
+  text-wrap: balance;
+}
+.prose h2.lead-sm {
+  margin-bottom: 16px;
+}

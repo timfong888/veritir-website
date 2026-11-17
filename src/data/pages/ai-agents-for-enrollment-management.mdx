@@ -1,7 +1,9 @@
 ---
-title: "AI Agents for Enrollment Management: What to Get Right First | Veritir"
-description: "What enrollment leaders need in place before deploying AI agents: four pressures (time, cost, personalization, integrations) and a readiness checklist."
+title: "AI Agents for Enrollment Management, Ready Out of the Box | Veritir"
+description: "An AI agent platform for enrollment management that starts with a built-in readiness assessment, runs on your current CRM, and ships with pre-built agent jobs."
 faq:
+  - q: "Is the platform available now?"
+    a: "Not yet. It is in design, and we are inviting a small number of enrollment teams to join as design partners. Early access begins with the readiness assessment, run on your own data."
   - q: "What is agentic enrollment?"
     a: "Agentic enrollment is the use of AI agents that carry out enrollment work, not only answer questions. An agent is given a job, such as replying to new inquiries or following up on unfinished applications, starts on a trigger, works across the CRM and messaging tools within set limits, and hands off to a counselor when a person is needed."
   - q: "How is an AI agent different from an admissions chatbot?"
@@ -16,57 +18,55 @@ faq:
 import RailSection from '../../components/RailSection.astro';
 
 <div class="rt-hero">
-  <span class="badge">Guide for enrollment leaders</span>
-  <h1>AI agents for enrollment management: <em>what to get right first</em></h1>
-  <p>Agentic enrollment means AI agents that do enrollment work: replying to inquiries, chasing unfinished applications, inviting prospects to visit, and handing off to a counselor at the right moment. Before choosing a platform, a team needs clear answers on four things.</p>
+  <span class="badge">Early access · in design</span>
+  <h1>AI agents for enrollment management, <em>ready out of the box</em></h1>
+  <p>Veritir is building an agentic enrollment platform for teams that cannot spend a year on implementation. It assesses your readiness first, drafts the pilot plan, then puts pre-built agents to work on the CRM you already have.</p>
+  <p class="hero-cta"><a class="textlink" href="mailto:tim@veritir.com?subject=Early%20access%3A%20enrollment%20agents">Request early access <span class="arrow" aria-hidden="true">→</span></a></p>
   <dl class="facts">
-    <div><dt>Time</dt><dd>How fast<small>does every inquiry get a reply</small></dd></div>
-    <div><dt>Cost</dt><dd>How much<small>per enrolled student</small></dd></div>
-    <div><dt>Personalization</dt><dd>How relevant<small>for each population</small></dd></div>
-    <div><dt>Integrations</dt><dd>How connected<small>are the systems involved</small></dd></div>
+    <div><dt>Time</dt><dd>Every inquiry<small>answered at any hour</small></dd></div>
+    <div><dt>Cost</dt><dd>No rip and replace<small>runs on your current CRM</small></dd></div>
+    <div><dt>Personalization</dt><dd>By population<small>first-year, transfer, adult, graduate</small></dd></div>
+    <div><dt>Integrations</dt><dd>Connected first<small>CRM, SIS, email and text</small></dd></div>
   </dl>
 </div>
 
-<RailSection id="pressures" n="01" label="The four pressures">
-  <h2 class="lead-sm">Four pressures on every enrollment management team</h2>
+<RailSection id="problem" n="01" label="The problem">
+  <h2 class="lead-sm">Enrollment management teams are squeezed four ways</h2>
   <ol class="principles">
-    <li><span class="n">01</span><h3>Time.</h3><p>Inquiries arrive at all hours. Counselors work some of them. In AACRAO's October 2025 survey, 95% of institutions reported at least one admissions staffing challenge and 54% named burnout. <a href="#src-aacrao">[1]</a> Slow first replies and missed follow-ups are the visible result.</p></li>
-    <li><span class="n">02</span><h3>Cost.</h3><p>Each enrolled student costs more to recruit when staff turn over and tools overlap. CUPA-HR found 71% of admissions coordinators and counselors had been in the role three years or less, so teams keep paying to retrain. <a href="#src-cupa">[2]</a></p></li>
-    <li><span class="n">03</span><h3>Personalization.</h3><p>First-year, transfer, adult, online and graduate prospects ask different questions on different timelines. One message plan for all of them is cheaper to run and easier to ignore.</p></li>
-    <li><span class="n">04</span><h3>Integrations.</h3><p>The CRM, student information system, application, email, texting and financial aid tools each hold part of the picture. Institutional knowledge sits in too many places and formats with too little governance, and an agent is only as good as what it can read. <a href="#src-ct">[3]</a></p></li>
+    <li><span class="n">01</span><h3>Time.</h3><p>Inquiries arrive at all hours and counselors reach some of them. In AACRAO's October 2025 survey, 95% of institutions reported at least one admissions staffing challenge and 54% named burnout. <a href="#src-aacrao">[1]</a></p></li>
+    <li><span class="n">02</span><h3>Cost.</h3><p>Each enrolled student costs more to recruit when staff turn over and tools overlap. CUPA-HR found 71% of admissions coordinators and counselors had been in the role three years or less. <a href="#src-cupa">[2]</a></p></li>
+    <li><span class="n">03</span><h3>Personalization.</h3><p>First-year, transfer, adult, online and graduate prospects ask different questions on different timelines. One message plan for all of them is easy to ignore.</p></li>
+    <li><span class="n">04</span><h3>Integrations.</h3><p>The CRM, student information system, application, email, texting and aid tools each hold part of the picture. Knowledge sits in too many places with too little governance. <a href="#src-ct">[3]</a></p></li>
   </ol>
 </RailSection>
 
-<RailSection id="up-front" n="02" label="What you need up front">
-  <h2 class="lead-sm">What to define before designing an AI enrollment solution</h2>
-  <div class="prose">
-    <p>Whether you buy a platform or build one, the same inputs decide whether it works. Each pressure has a requirement, and a number you should know before talking to a vendor.</p>
-  </div>
+<RailSection id="alternatives" n="02" label="Today's options">
+  <h2 class="lead-sm">Why the usual fixes fall short</h2>
   <div class="tablewrap">
     <table class="schedule jobs">
-      <thead><tr><th scope="col">Pressure</th><th scope="col">Define up front</th><th scope="col">The number to know</th></tr></thead>
+      <thead><tr><th scope="col">Option</th><th scope="col">What it solves</th><th scope="col">What it leaves</th></tr></thead>
       <tbody>
-        <tr><td>Time</td><td>Which outreach is repetitive, and what response standard you are holding yourself to</td><td>Median time to first response; staff hours a week on reminders and status checks</td></tr>
-        <tr><td>Cost</td><td>What you spend now on people, tools and outside help to enroll a class</td><td>Cost per enrolled student; annual spend on overlapping tools</td></tr>
-        <tr><td>Personalization</td><td>Your populations, and the questions and deadlines that differ for each</td><td>Stage-to-stage conversion for each population</td></tr>
-        <tr><td>Integrations</td><td>Every system that holds student contact history, and which one is the record</td><td>Share of records that are duplicated or missing consent to text</td></tr>
+        <tr><td>Hire more counselors</td><td>Capacity, for a while</td><td>Cost rises, and turnover resets the gain</td></tr>
+        <tr><td>Add a chatbot</td><td>Answers questions students think to ask</td><td>No follow-up, no outreach, no change to the funnel</td></tr>
+        <tr><td>Replace the CRM with an AI-native one</td><td>One system, agents included</td><td>A migration before any result, and a pilot with no baseline</td></tr>
+        <tr><td>Build it in-house</td><td>Full control</td><td>Needs engineers and an operations lead most teams do not have</td></tr>
       </tbody>
     </table>
   </div>
-  <h3 class="sub">Then five decisions, in writing</h3>
-  <ol class="questions">
-    <li>Which one population, and which one job, comes first?</li>
-    <li>Where is the single current answer to each common question?</li>
-    <li>When does a person take over, and who is it?</li>
-    <li>What number, measured how, counts as success?</li>
-    <li>What result would make us stop?</li>
-  </ol>
+  <div class="prose after">
+    <p>What is missing is a product that does the unglamorous setup for you: measuring where you stand, deciding what the agent should do first, and proving what changed.</p>
+  </div>
 </RailSection>
 
-<RailSection id="readiness" n="03" label="Readiness assessment">
-  <h2 class="lead-sm">An AI readiness assessment for enrollment</h2>
+<RailSection id="how-it-works" n="03" label="How it works" class="manifesto">
+  <h2 class="lead">Assess, plan, run, measure. In that order, in the software.</h2>
+  <p>Most platforms start at "run." Veritir makes the first two steps part of the product, so a lean team gets the discipline of a large implementation without staffing one.</p>
+</RailSection>
+
+<RailSection id="assess" label="Step 1 · Assess">
+  <h2 class="lead-sm">A built-in AI readiness assessment</h2>
   <div class="prose">
-    <p>Most of that list can be measured from data you already have. This is the piece we think software should do first: connect read-only to the CRM and the public website, score readiness, and send nothing to a student until the team has seen the result.</p>
+    <p>Connect the platform read-only to your CRM and public website. It scores readiness across the four pressures and sends nothing to a student until your team has reviewed the result.</p>
   </div>
   <figure class="scorecard" aria-labelledby="scorecard-cap">
     <figcaption id="scorecard-cap"><span>Readiness assessment</span><span>Illustrative output, not real data</span></figcaption>
@@ -81,12 +81,29 @@ import RailSection from '../../components/RailSection.astro';
     </ul>
   </figure>
   <div class="prose">
-    <p>The output is a baseline that later results are measured against, and a ranked list of jobs an agent could take, ordered by value and by risk. Readiness matters because adoption is running ahead of it: only 56% of institutions in the UPCEA and EducationDynamics survey had a plan to train and support staff on AI tools. <a href="#src-upcea">[4]</a></p>
+    <p>You leave step one with a baseline and a ranked list of jobs an agent could take, ordered by value and by risk. Readiness is the common gap: only 56% of institutions in the UPCEA and EducationDynamics survey had a plan to train and support staff on AI tools. <a href="#src-upcea">[4]</a></p>
   </div>
 </RailSection>
 
-<RailSection id="funnel" n="04" label="Across the funnel">
-  <h2 class="lead-sm">Where AI agents fit in the enrollment funnel</h2>
+<RailSection id="plan" label="Step 2 · Plan">
+  <h2 class="lead-sm">A pilot framework the software drafts for you</h2>
+  <div class="prose">
+    <p>From the assessment, the platform writes a pilot charter for your team to edit and sign. An agent cannot be switched on until these five questions have answers.</p>
+  </div>
+  <ol class="questions">
+    <li>Which one population, and which one job, comes first?</li>
+    <li>Where is the single current answer to each common question?</li>
+    <li>When does a person take over, and who is it?</li>
+    <li>What number, measured how, counts as success?</li>
+    <li>What result would make us stop?</li>
+  </ol>
+</RailSection>
+
+<RailSection id="run" label="Step 3 · Run">
+  <h2 class="lead-sm">Pre-built agents across the enrollment funnel</h2>
+  <div class="prose">
+    <p>Agent jobs come ready to use, each with its trigger, message plan and human handoff defined. Pick from the list the assessment ranked.</p>
+  </div>
   <div class="tablewrap">
     <table class="schedule jobs">
       <thead><tr><th scope="col">Agent job</th><th scope="col">Starts when</th><th scope="col">A person steps in when</th></tr></thead>
@@ -99,22 +116,47 @@ import RailSection from '../../components/RailSection.astro';
       </tbody>
     </table>
   </div>
-  <div class="prose after">
-    <p>Start with one row for one population, with a cap on how many students it reaches. Report results against the baseline in plain units: replies within an hour, applications completed, hours of outreach handled.</p>
+</RailSection>
+
+<RailSection id="measure" label="Step 4 · Measure" class="prose">
+  <h2 class="lead-sm">Results you can defend to a cabinet</h2>
+  <p>A scorecard reports each agent against the step-one baseline in plain units: replies within an hour, applications completed, hours of outreach handled. The method is shown next to every number.</p>
+</RailSection>
+
+<RailSection id="benefits" n="04" label="What you get">
+  <h2 class="lead-sm">One platform, four pressures answered</h2>
+  <div class="tablewrap">
+    <table class="schedule jobs">
+      <thead><tr><th scope="col">Pressure</th><th scope="col">What the platform does</th><th scope="col">What changes for your team</th></tr></thead>
+      <tbody>
+        <tr><td>Time</td><td>Agents reply, remind and follow up around the clock</td><td>Counselors spend their hours on conversations that need judgment</td></tr>
+        <tr><td>Cost</td><td>Works on your current CRM and flags overlapping tools</td><td>No migration to fund before you see a result</td></tr>
+        <tr><td>Personalization</td><td>Separate message plans and knowledge for each population</td><td>Adult, transfer and graduate prospects stop getting first-year answers</td></tr>
+        <tr><td>Integrations</td><td>Maps every system holding student contact history before launch</td><td>Agents read one current answer, and data problems surface early</td></tr>
+      </tbody>
+    </table>
   </div>
 </RailSection>
 
-<RailSection id="rules" n="05" label="Ground rules">
+<RailSection id="who" n="05" label="Who it is for">
+  <h2 class="lead-sm">Built for lean enrollment teams</h2>
+  <ol class="principles">
+    <li><span class="n">Fit</span><h3>A good fit.</h3><p>You have a CRM in place, more students than counselors can reach, several populations to serve, and a leader who has to defend the numbers.</p></li>
+    <li><span class="n">Not yet</span><h3>Not a fit.</h3><p>You want to replace your CRM first, or you want agents to make admission or aid decisions. We do neither.</p></li>
+  </ol>
+</RailSection>
+
+<RailSection id="rules" n="06" label="Ground rules">
   <h2 class="lead-sm">Ground rules for AI agents in admissions</h2>
   <ol class="principles">
     <li><span class="n">01</span><h3>Students know it is AI.</h3><p>Every agent says what it is, and offers a person.</p></li>
     <li><span class="n">02</span><h3>Agents do not decide.</h3><p>No admission, aid or scholarship decision is made or implied by an agent.</p></li>
-    <li><span class="n">03</span><h3>Works with what you have.</h3><p>Assessment runs on the current CRM. Replacing tools is a finding, not a prerequisite.</p></li>
+    <li><span class="n">03</span><h3>People hold the gates.</h3><p>Staff can read every conversation, approve message plans and take over at any point.</p></li>
     <li><span class="n">04</span><h3>Reversible by design.</h3><p>A capped pilot with written stop conditions respects shared governance.</p></li>
   </ol>
 </RailSection>
 
-<RailSection id="faq" n="06" label="Questions">
+<RailSection id="faq" n="07" label="Questions">
   <h2 class="lead-sm">Common questions about agentic enrollment</h2>
   <dl class="faq">
     {frontmatter.faq.map((item) => (
@@ -123,14 +165,14 @@ import RailSection from '../../components/RailSection.astro';
   </dl>
 </RailSection>
 
-<RailSection id="partners" n="07" label="Work with us">
+<RailSection id="early-access" n="08" label="Early access">
   <div class="invite">
     <div>
-      <span class="badge">Concept · in design</span>
-      <h3 class="invite-title">Help shape the assessment.</h3>
-      <p>The readiness assessment described here is a concept, not a shipping product. We are looking for a few enrollment teams willing to walk through it on their own data and tell us what it gets wrong.</p>
+      <span class="badge">Design partners</span>
+      <h3 class="invite-title">Start with the assessment.</h3>
+      <p>The platform is in design and not yet generally available. We are inviting a few enrollment teams to run the readiness assessment on their own data and shape what ships.</p>
     </div>
-    <a class="textlink" href="mailto:tim@veritir.com?subject=Enrollment%20AI%20readiness%20assessment">Email Tim <span class="arrow" aria-hidden="true">→</span></a>
+    <a class="textlink" href="mailto:tim@veritir.com?subject=Early%20access%3A%20enrollment%20agents">Request early access <span class="arrow" aria-hidden="true">→</span></a>
   </div>
   <ol class="sources">
     <li id="src-aacrao">AACRAO, <a href="https://www.aacrao.org/news/november-december-2025-research-updates-and-news-faculty-views-on-transfer-rising-college-costs-and-more/">Admissions Staffing: The State of the Office</a>, October 2025 60-Second Survey.</li>

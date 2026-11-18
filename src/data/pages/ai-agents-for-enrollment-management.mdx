@@ -40,7 +40,58 @@ import RailSection from '../../components/RailSection.astro';
   </ol>
 </RailSection>
 
-<RailSection id="alternatives" n="02" label="Today's options">
+<section class="lifecycle" aria-labelledby="lifecycle">
+  <div class="lc-head">
+    <h2 class="rail" id="lifecycle"><span class="n">02</span>The enrollment lifecycle</h2>
+    <p class="lead-sm">From first interest to a student in a seat: where students are lost, and where an agent works</p>
+  </div>
+  <ol class="lc">
+    <li>
+      <h3><span class="n">01</span>Prospect</h3>
+      <p class="lc-what">Finds you through search, AI answers, a fair or a purchased name.</p>
+      <p class="lc-lost"><span>Lost when</span>Interest never turns into a question.</p>
+      <p class="lc-agent"><span>Agent job</span>Visit and event invitations</p>
+      <p class="lc-human"><span>A person steps in when</span>A group or special request comes in</p>
+    </li>
+    <li>
+      <h3><span class="n">02</span>Inquiry</h3>
+      <p class="lc-what">Submits a form or sends a message, often after hours.</p>
+      <p class="lc-lost"><span>Lost when</span>The first reply takes a day or more.</p>
+      <p class="lc-agent"><span>Agent job</span>Inquiry response</p>
+      <p class="lc-human"><span>A person steps in when</span>The student asks about cost, aid or fit</p>
+    </li>
+    <li>
+      <h3><span class="n">03</span>Applicant</h3>
+      <p class="lc-what">Starts an application.</p>
+      <p class="lc-lost"><span>Lost when</span>It sits unfinished, or documents go missing.</p>
+      <p class="lc-agent"><span>Agent job</span>Application completion</p>
+      <p class="lc-human"><span>A person steps in when</span>A document is disputed or unusual</p>
+    </li>
+    <li>
+      <h3><span class="n">04</span>Admitted</h3>
+      <p class="lc-what">Receives an offer.</p>
+      <p class="lc-lost"><span>Lost when</span>Another school follows up faster.</p>
+      <p class="lc-agent"><span>Agent job</span>Admit to deposit (yield)</p>
+      <p class="lc-human"><span>A person steps in when</span>The student hesitates or names another school</p>
+    </li>
+    <li>
+      <h3><span class="n">05</span>Deposited</h3>
+      <p class="lc-what">Commits and pays a deposit.</p>
+      <p class="lc-lost"><span>Lost when</span>Goes quiet over the summer and melts.</p>
+      <p class="lc-agent"><span>Agent job</span>Summer melt outreach</p>
+      <p class="lc-human"><span>A person steps in when</span>Any sign of a barrier to enrolling</p>
+    </li>
+    <li>
+      <h3><span class="n">06</span>Enrolled</h3>
+      <p class="lc-what">Registers and starts the first term.</p>
+      <p class="lc-lost lc-goal"><span>The goal</span>A student in a seat, and a baseline to beat next cycle.</p>
+      <p class="lc-agent"><span>Agent job</span>Hands the record to student success</p>
+      <p class="lc-human"><span>A person steps in when</span>Advising takes it from here</p>
+    </li>
+  </ol>
+</section>
+
+<RailSection id="alternatives" n="03" label="Today's options">
   <h2 class="lead-sm">Why the usual fixes fall short</h2>
   <div class="tablewrap">
     <table class="schedule jobs">
@@ -58,7 +109,7 @@ import RailSection from '../../components/RailSection.astro';
   </div>
 </RailSection>
 
-<RailSection id="how-it-works" n="03" label="How it works" class="manifesto">
+<RailSection id="how-it-works" n="04" label="How it works" class="manifesto">
   <h2 class="lead">Assess, plan, run, measure. In that order, in the software.</h2>
   <p>Most platforms start at "run." Veritir makes the first two steps part of the product, so a lean team gets the discipline of a large implementation without staffing one.</p>
 </RailSection>
@@ -99,23 +150,9 @@ import RailSection from '../../components/RailSection.astro';
   </ol>
 </RailSection>
 
-<RailSection id="run" label="Step 3 · Run">
+<RailSection id="run" label="Step 3 · Run" class="prose">
   <h2 class="lead-sm">Pre-built agents across the enrollment funnel</h2>
-  <div class="prose">
-    <p>Agent jobs come ready to use, each with its trigger, message plan and human handoff defined. Pick from the list the assessment ranked.</p>
-  </div>
-  <div class="tablewrap">
-    <table class="schedule jobs">
-      <thead><tr><th scope="col">Agent job</th><th scope="col">Starts when</th><th scope="col">A person steps in when</th></tr></thead>
-      <tbody>
-        <tr><td>Inquiry response</td><td>A form is submitted, at any hour</td><td>The student asks about cost, aid or fit</td></tr>
-        <tr><td>Application completion</td><td>An application sits unfinished</td><td>A document is disputed or unusual</td></tr>
-        <tr><td>Visit and event invitations</td><td>A prospect matches an event</td><td>A group or special request comes in</td></tr>
-        <tr><td>Admit to deposit (yield)</td><td>An offer goes out</td><td>The student hesitates or names another school</td></tr>
-        <tr><td>Summer melt</td><td>A deposited student goes quiet</td><td>Any sign of a barrier to enrolling</td></tr>
-      </tbody>
-    </table>
-  </div>
+  <p>Each stage of the <a href="#lifecycle">enrollment lifecycle</a> has an agent job that comes ready to use, with its trigger, message plan and human handoff defined. Pick the one the assessment ranked first, for one population, with a cap on how many students it reaches.</p>
 </RailSection>
 
 <RailSection id="measure" label="Step 4 · Measure" class="prose">
@@ -123,7 +160,7 @@ import RailSection from '../../components/RailSection.astro';
   <p>A scorecard reports each agent against the step-one baseline in plain units: replies within an hour, applications completed, hours of outreach handled. The method is shown next to every number.</p>
 </RailSection>
 
-<RailSection id="benefits" n="04" label="What you get">
+<RailSection id="benefits" n="05" label="What you get">
   <h2 class="lead-sm">One platform, four pressures answered</h2>
   <div class="tablewrap">
     <table class="schedule jobs">
@@ -138,7 +175,7 @@ import RailSection from '../../components/RailSection.astro';
   </div>
 </RailSection>
 
-<RailSection id="who" n="05" label="Who it is for">
+<RailSection id="who" n="06" label="Who it is for">
   <h2 class="lead-sm">Built for lean enrollment teams</h2>
   <ol class="principles">
     <li><span class="n">Fit</span><h3>A good fit.</h3><p>You have a CRM in place, more students than counselors can reach, several populations to serve, and a leader who has to defend the numbers.</p></li>
@@ -146,7 +183,7 @@ import RailSection from '../../components/RailSection.astro';
   </ol>
 </RailSection>
 
-<RailSection id="rules" n="06" label="Ground rules">
+<RailSection id="rules" n="07" label="Ground rules">
   <h2 class="lead-sm">Ground rules for AI agents in admissions</h2>
   <ol class="principles">
     <li><span class="n">01</span><h3>Students know it is AI.</h3><p>Every agent says what it is, and offers a person.</p></li>
@@ -156,7 +193,7 @@ import RailSection from '../../components/RailSection.astro';
   </ol>
 </RailSection>
 
-<RailSection id="faq" n="07" label="Questions">
+<RailSection id="faq" n="08" label="Questions">
   <h2 class="lead-sm">Common questions about agentic enrollment</h2>
   <dl class="faq">
     {frontmatter.faq.map((item) => (
@@ -165,7 +202,7 @@ import RailSection from '../../components/RailSection.astro';
   </dl>
 </RailSection>
 
-<RailSection id="early-access" n="08" label="Early access">
+<RailSection id="early-access" n="09" label="Early access">
   <div class="invite">
     <div>
       <span class="badge">Design partners</span>

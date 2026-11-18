@@ -42,9 +42,43 @@ import RailSection from '../../components/RailSection.astro';
 
 <section class="lifecycle" aria-labelledby="lifecycle">
   <div class="lc-head">
-    <h2 class="rail" id="lifecycle"><span class="n">02</span>The enrollment lifecycle</h2>
-    <p class="lead-sm">From first interest to a student in a seat: where students are lost, and where an agent works</p>
+    <h2 class="rail" id="lifecycle"><span class="n">02</span>The enrollment flywheel</h2>
+    <p class="lead-sm">An enrollment flywheel, not an enrollment funnel</p>
   </div>
+  <div class="flywheel">
+    <figure class="fw-figure">
+      <svg viewBox="0 0 480 480" role="img" aria-labelledby="fw-title fw-desc">
+      <title id="fw-title">The enrollment flywheel</title>
+      <desc id="fw-desc">Six stages arranged in a circle: Prospect, Inquiry, Applicant, Admitted, Deposited and Enrolled. An arrow leads from Enrolled back to Prospect, so each enrolled student and each conversation feeds the next turn.</desc>
+      <circle class="fw-ring" cx="240" cy="240" r="168" />
+      <path class="fw-return" d="M94.5 156.0 A168 168 0 0 1 240.0 72.0" />
+      <polygon class="fw-arrow" points="-7,-6 7,0 -7,6" transform="translate(324.0 94.5) rotate(30)" />
+      <polygon class="fw-arrow" points="-7,-6 7,0 -7,6" transform="translate(408.0 240.0) rotate(90)" />
+      <polygon class="fw-arrow" points="-7,-6 7,0 -7,6" transform="translate(324.0 385.5) rotate(150)" />
+      <polygon class="fw-arrow" points="-7,-6 7,0 -7,6" transform="translate(156.0 385.5) rotate(210)" />
+      <polygon class="fw-arrow" points="-7,-6 7,0 -7,6" transform="translate(72.0 240.0) rotate(270)" />
+      <polygon class="fw-arrow fw-arrow-return" points="-7,-6 7,0 -7,6" transform="translate(156.0 94.5) rotate(330)" />
+      <g class="fw-node"><rect x="182.0" y="47.0" width="116" height="50" rx="3" /><text class="fw-n" x="240.0" y="64.0">01</text><text class="fw-name" x="240.0" y="86.0">Prospect</text></g>
+      <g class="fw-node"><rect x="327.5" y="131.0" width="116" height="50" rx="3" /><text class="fw-n" x="385.5" y="148.0">02</text><text class="fw-name" x="385.5" y="170.0">Inquiry</text></g>
+      <g class="fw-node"><rect x="327.5" y="299.0" width="116" height="50" rx="3" /><text class="fw-n" x="385.5" y="316.0">03</text><text class="fw-name" x="385.5" y="338.0">Applicant</text></g>
+      <g class="fw-node"><rect x="182.0" y="383.0" width="116" height="50" rx="3" /><text class="fw-n" x="240.0" y="400.0">04</text><text class="fw-name" x="240.0" y="422.0">Admitted</text></g>
+      <g class="fw-node"><rect x="36.5" y="299.0" width="116" height="50" rx="3" /><text class="fw-n" x="94.5" y="316.0">05</text><text class="fw-name" x="94.5" y="338.0">Deposited</text></g>
+      <g class="fw-node fw-node-last"><rect x="36.5" y="131.0" width="116" height="50" rx="3" /><text class="fw-n" x="94.5" y="148.0">06</text><text class="fw-name" x="94.5" y="170.0">Enrolled</text></g>
+      <text class="fw-center" x="240" y="218">Agents act.</text>
+      <text class="fw-center" x="240" y="246">Software measures.</text>
+      <text class="fw-center fw-center-em" x="240" y="274">Each turn starts ahead.</text>
+      </svg>
+    </figure>
+    <div class="fw-loops">
+      <p>A funnel ends at the deposit. A flywheel uses every conversation and every enrolled student to make the next turn easier. Agents do the work at each stage, and the software carries what was learned back to the start.</p>
+      <ol>
+        <li><h3>It learns.</h3><p>Each conversation shows what students ask and where they stall. That becomes better answers and message plans for the next cohort.</p><p class="fw-measure"><span>Measure</span>Stage conversion, cycle over cycle</p></li>
+        <li><h3>It frees people.</h3><p>Hours the agents take back go to the conversations that need judgment, which is where yield is won.</p><p class="fw-measure"><span>Measure</span>Counselor hours spent one to one</p></li>
+        <li><h3>It compounds.</h3><p>Enrolled students become the source of the next ones: outcomes to cite, referrals, and a next course to take.</p><p class="fw-measure"><span>Measure</span>Inquiries from referrals and returning learners</p></li>
+      </ol>
+    </div>
+  </div>
+  <h3 class="sub">One turn of the flywheel</h3>
   <ol class="lc">
     <li>
       <h3><span class="n">01</span>Prospect</h3>
@@ -84,9 +118,9 @@ import RailSection from '../../components/RailSection.astro';
     <li>
       <h3><span class="n">06</span>Enrolled</h3>
       <p class="lc-what">Registers and starts the first term.</p>
-      <p class="lc-lost lc-goal"><span>The goal</span>A student in a seat, and a baseline to beat next cycle.</p>
-      <p class="lc-agent"><span>Agent job</span>Hands the record to student success</p>
-      <p class="lc-human"><span>A person steps in when</span>Advising takes it from here</p>
+      <p class="lc-lost lc-goal"><span>Feeds the next turn</span>Outcomes, questions asked and referrals flow back to stage 01.</p>
+      <p class="lc-agent"><span>Agent job</span>Referral and next-course invitations</p>
+      <p class="lc-human"><span>A person steps in when</span>Advising and student success own the relationship</p>
     </li>
   </ol>
 </section>
@@ -152,12 +186,12 @@ import RailSection from '../../components/RailSection.astro';
 
 <RailSection id="run" label="Step 3 · Run" class="prose">
   <h2 class="lead-sm">Pre-built agents across the enrollment funnel</h2>
-  <p>Each stage of the <a href="#lifecycle">enrollment lifecycle</a> has an agent job that comes ready to use, with its trigger, message plan and human handoff defined. Pick the one the assessment ranked first, for one population, with a cap on how many students it reaches.</p>
+  <p>Each stage of the <a href="#lifecycle">enrollment flywheel</a> has an agent job that comes ready to use, with its trigger, message plan and human handoff defined. Pick the one the assessment ranked first, for one population, with a cap on how many students it reaches.</p>
 </RailSection>
 
 <RailSection id="measure" label="Step 4 · Measure" class="prose">
   <h2 class="lead-sm">Results you can defend to a cabinet</h2>
-  <p>A scorecard reports each agent against the step-one baseline in plain units: replies within an hour, applications completed, hours of outreach handled. The method is shown next to every number.</p>
+  <p>A scorecard reports each agent against the step-one baseline in plain units: replies within an hour, applications completed, hours of outreach handled. The method is shown next to every number. Those results set the starting point for the next turn of the <a href="#lifecycle">flywheel</a>.</p>
 </RailSection>
 
 <RailSection id="benefits" n="05" label="What you get">

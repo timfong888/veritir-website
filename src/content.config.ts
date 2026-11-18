@@ -8,6 +8,10 @@ const pages = defineCollection({
     title: z.string(),
     description: z.string(),
     ogImage: z.string().optional(),
+    // Unlisted pages: kept out of the nav and out of search indexes.
+    noindex: z.boolean().optional(),
+    // Rendered on the page and emitted as FAQPage structured data.
+    faq: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
   }),
 });
 

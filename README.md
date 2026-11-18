@@ -11,6 +11,7 @@ npm run build
 ## Structure
 
 - `src/data/pages/*.mdx`: page copy (`home.mdx` → `/`, `roundtable.mdx` → `/roundtable`)
+- `ai-agents-for-enrollment-management.mdx` → `/ai-agents-for-enrollment-management`: search-facing guide. Not in the nav or linked from other pages; listed in `public/sitemap.xml`. Its `faq` frontmatter renders on the page and as FAQPage structured data
 - `src/pages/`: routes that render the MDX entries
 - `src/layouts/BaseLayout.astro`: header, nav, footer, meta
 - `src/components/RailSection.astro`: section with the mono margin-rail label

@@ -1,0 +1,254 @@
+---
+title: "AI Agents for Enrollment Management, Ready Out of the Box | Veritir"
+description: "An AI agent platform for enrollment management that starts with a built-in readiness assessment, runs on your current CRM, and ships with pre-built agent jobs."
+faq:
+  - q: "Is the platform available now?"
+    a: "Not yet. It is in design, and we are inviting a small number of enrollment teams to join as design partners. Early access begins with the readiness assessment, run on your own data."
+  - q: "What is agentic enrollment?"
+    a: "Agentic enrollment is the use of AI agents that carry out enrollment work, not only answer questions. An agent is given a job, such as replying to new inquiries or following up on unfinished applications, starts on a trigger, works across the CRM and messaging tools within set limits, and hands off to a counselor when a person is needed."
+  - q: "How is an AI agent different from an admissions chatbot?"
+    a: "A chatbot waits for a question and answers it. An AI agent is assigned an outcome. It starts the conversation, follows up over days or weeks, updates records, and escalates to staff under rules the enrollment team sets in advance."
+  - q: "Do AI agents replace admissions counselors?"
+    a: "In a sound design, no. Agents take the repetitive outreach: first replies, reminders, status checks and event invitations. Counselors keep the conversations that need judgment, such as cost, aid and fit. Agents should not make or imply admission or aid decisions."
+  - q: "Do we need to replace our CRM to use AI agents?"
+    a: "Not to get started. The first step is to measure response times, data quality and tool overlap on the systems already in place. Consolidating or replacing tools may turn out to be a finding of that work, but it should not be a prerequisite."
+  - q: "What should an enrollment team measure before an AI agent pilot?"
+    a: "At minimum: median time to first response, the share of inquiries answered within a day, stage-to-stage conversion by student population, staff hours spent on repetitive outreach, and cost per enrolled student. Without that baseline a pilot cannot show what changed."
+---
+import RailSection from '../../components/RailSection.astro';
+
+<div class="rt-hero">
+  <span class="badge">Early access · in design</span>
+  <h1>AI agents for enrollment management, <em>ready out of the box</em></h1>
+  <p>Veritir is building an agentic enrollment platform for teams that cannot spend a year on implementation. It assesses your readiness first, drafts the pilot plan, then puts pre-built agents to work on the CRM you already have.</p>
+  <p class="hero-cta"><a class="textlink" href="mailto:tim@veritir.com?subject=Early%20access%3A%20enrollment%20agents">Request early access <span class="arrow" aria-hidden="true">→</span></a></p>
+  <dl class="facts">
+    <div><dt>Time</dt><dd>Every inquiry<small>answered at any hour</small></dd></div>
+    <div><dt>Cost</dt><dd>No rip and replace<small>runs on your current CRM</small></dd></div>
+    <div><dt>Personalization</dt><dd>By population<small>first-year, transfer, adult, graduate</small></dd></div>
+    <div><dt>Integrations</dt><dd>Connected first<small>CRM, SIS, email and text</small></dd></div>
+  </dl>
+</div>
+
+<RailSection id="problem" n="01" label="The problem">
+  <h2 class="lead-sm">Enrollment management teams are squeezed four ways</h2>
+  <ol class="principles">
+    <li><span class="n">01</span><h3>Time.</h3><p>Inquiries arrive at all hours and counselors reach some of them. In AACRAO's October 2025 survey, 95% of institutions reported at least one admissions staffing challenge and 54% named burnout. <a href="#src-aacrao">[1]</a></p></li>
+    <li><span class="n">02</span><h3>Cost.</h3><p>Each enrolled student costs more to recruit when staff turn over and tools overlap. CUPA-HR found 71% of admissions coordinators and counselors had been in the role three years or less. <a href="#src-cupa">[2]</a></p></li>
+    <li><span class="n">03</span><h3>Personalization.</h3><p>First-year, transfer, adult, online and graduate prospects ask different questions on different timelines. One message plan for all of them is easy to ignore.</p></li>
+    <li><span class="n">04</span><h3>Integrations.</h3><p>The CRM, student information system, application, email, texting and aid tools each hold part of the picture. Knowledge sits in too many places with too little governance. <a href="#src-ct">[3]</a></p></li>
+  </ol>
+</RailSection>
+
+<section class="lifecycle" aria-labelledby="lifecycle">
+  <div class="lc-head">
+    <h2 class="rail" id="lifecycle"><span class="n">02</span>The enrollment flywheel</h2>
+    <p class="lead-sm">An enrollment flywheel, not an enrollment funnel</p>
+  </div>
+  <div class="flywheel">
+    <figure class="fw-figure">
+      <svg viewBox="0 0 480 480" role="img" aria-labelledby="fw-title fw-desc">
+      <title id="fw-title">The enrollment flywheel</title>
+      <desc id="fw-desc">Six stages arranged in a circle: Prospect, Inquiry, Applicant, Admitted, Deposited and Enrolled. An arrow leads from Enrolled back to Prospect, so each enrolled student and each conversation feeds the next turn.</desc>
+      <circle class="fw-ring" cx="240" cy="240" r="168" />
+      <path class="fw-return" d="M94.5 156.0 A168 168 0 0 1 240.0 72.0" />
+      <polygon class="fw-arrow" points="-7,-6 7,0 -7,6" transform="translate(324.0 94.5) rotate(30)" />
+      <polygon class="fw-arrow" points="-7,-6 7,0 -7,6" transform="translate(408.0 240.0) rotate(90)" />
+      <polygon class="fw-arrow" points="-7,-6 7,0 -7,6" transform="translate(324.0 385.5) rotate(150)" />
+      <polygon class="fw-arrow" points="-7,-6 7,0 -7,6" transform="translate(156.0 385.5) rotate(210)" />
+      <polygon class="fw-arrow" points="-7,-6 7,0 -7,6" transform="translate(72.0 240.0) rotate(270)" />
+      <polygon class="fw-arrow fw-arrow-return" points="-7,-6 7,0 -7,6" transform="translate(156.0 94.5) rotate(330)" />
+      <g class="fw-node"><rect x="182.0" y="47.0" width="116" height="50" rx="3" /><text class="fw-n" x="240.0" y="64.0">01</text><text class="fw-name" x="240.0" y="86.0">Prospect</text></g>
+      <g class="fw-node"><rect x="327.5" y="131.0" width="116" height="50" rx="3" /><text class="fw-n" x="385.5" y="148.0">02</text><text class="fw-name" x="385.5" y="170.0">Inquiry</text></g>
+      <g class="fw-node"><rect x="327.5" y="299.0" width="116" height="50" rx="3" /><text class="fw-n" x="385.5" y="316.0">03</text><text class="fw-name" x="385.5" y="338.0">Applicant</text></g>
+      <g class="fw-node"><rect x="182.0" y="383.0" width="116" height="50" rx="3" /><text class="fw-n" x="240.0" y="400.0">04</text><text class="fw-name" x="240.0" y="422.0">Admitted</text></g>
+      <g class="fw-node"><rect x="36.5" y="299.0" width="116" height="50" rx="3" /><text class="fw-n" x="94.5" y="316.0">05</text><text class="fw-name" x="94.5" y="338.0">Deposited</text></g>
+      <g class="fw-node fw-node-last"><rect x="36.5" y="131.0" width="116" height="50" rx="3" /><text class="fw-n" x="94.5" y="148.0">06</text><text class="fw-name" x="94.5" y="170.0">Enrolled</text></g>
+      <text class="fw-center" x="240" y="218">Agents act.</text>
+      <text class="fw-center" x="240" y="246">Software measures.</text>
+      <text class="fw-center fw-center-em" x="240" y="274">Each turn starts ahead.</text>
+      </svg>
+    </figure>
+    <div class="fw-loops">
+      <p>A funnel ends at the deposit. A flywheel uses every conversation and every enrolled student to make the next turn easier. Agents do the work at each stage, and the software carries what was learned back to the start.</p>
+      <ol>
+        <li><h3>It learns.</h3><p>Each conversation shows what students ask and where they stall. That becomes better answers and message plans for the next cohort.</p><p class="fw-measure"><span>Measure</span>Stage conversion, cycle over cycle</p></li>
+        <li><h3>It frees people.</h3><p>Hours the agents take back go to the conversations that need judgment, which is where yield is won.</p><p class="fw-measure"><span>Measure</span>Counselor hours spent one to one</p></li>
+        <li><h3>It compounds.</h3><p>Enrolled students become the source of the next ones: outcomes to cite, referrals, and a next course to take.</p><p class="fw-measure"><span>Measure</span>Inquiries from referrals and returning learners</p></li>
+      </ol>
+    </div>
+  </div>
+  <h3 class="sub">One turn of the flywheel</h3>
+  <ol class="lc">
+    <li>
+      <h3><span class="n">01</span>Prospect</h3>
+      <p class="lc-what">Finds you through search, AI answers, a fair or a purchased name.</p>
+      <p class="lc-lost"><span>Lost when</span>Interest never turns into a question.</p>
+      <p class="lc-agent"><span>Agent job</span>Visit and event invitations</p>
+      <p class="lc-human"><span>A person steps in when</span>A group or special request comes in</p>
+    </li>
+    <li>
+      <h3><span class="n">02</span>Inquiry</h3>
+      <p class="lc-what">Submits a form or sends a message, often after hours.</p>
+      <p class="lc-lost"><span>Lost when</span>The first reply takes a day or more.</p>
+      <p class="lc-agent"><span>Agent job</span>Inquiry response</p>
+      <p class="lc-human"><span>A person steps in when</span>The student asks about cost, aid or fit</p>
+    </li>
+    <li>
+      <h3><span class="n">03</span>Applicant</h3>
+      <p class="lc-what">Starts an application.</p>
+      <p class="lc-lost"><span>Lost when</span>It sits unfinished, or documents go missing.</p>
+      <p class="lc-agent"><span>Agent job</span>Application completion</p>
+      <p class="lc-human"><span>A person steps in when</span>A document is disputed or unusual</p>
+    </li>
+    <li>
+      <h3><span class="n">04</span>Admitted</h3>
+      <p class="lc-what">Receives an offer.</p>
+      <p class="lc-lost"><span>Lost when</span>Another school follows up faster.</p>
+      <p class="lc-agent"><span>Agent job</span>Admit to deposit (yield)</p>
+      <p class="lc-human"><span>A person steps in when</span>The student hesitates or names another school</p>
+    </li>
+    <li>
+      <h3><span class="n">05</span>Deposited</h3>
+      <p class="lc-what">Commits and pays a deposit.</p>
+      <p class="lc-lost"><span>Lost when</span>Goes quiet over the summer and melts.</p>
+      <p class="lc-agent"><span>Agent job</span>Summer melt outreach</p>
+      <p class="lc-human"><span>A person steps in when</span>Any sign of a barrier to enrolling</p>
+    </li>
+    <li>
+      <h3><span class="n">06</span>Enrolled</h3>
+      <p class="lc-what">Registers and starts the first term.</p>
+      <p class="lc-lost lc-goal"><span>Feeds the next turn</span>Outcomes, questions asked and referrals flow back to stage 01.</p>
+      <p class="lc-agent"><span>Agent job</span>Referral and next-course invitations</p>
+      <p class="lc-human"><span>A person steps in when</span>Advising and student success own the relationship</p>
+    </li>
+  </ol>
+</section>
+
+<RailSection id="alternatives" n="03" label="Today's options">
+  <h2 class="lead-sm">Why the usual fixes fall short</h2>
+  <div class="tablewrap">
+    <table class="schedule jobs">
+      <thead><tr><th scope="col">Option</th><th scope="col">What it solves</th><th scope="col">What it leaves</th></tr></thead>
+      <tbody>
+        <tr><td>Hire more counselors</td><td>Capacity, for a while</td><td>Cost rises, and turnover resets the gain</td></tr>
+        <tr><td>Add a chatbot</td><td>Answers questions students think to ask</td><td>No follow-up, no outreach, no change to the funnel</td></tr>
+        <tr><td>Replace the CRM with an AI-native one</td><td>One system, agents included</td><td>A migration before any result, and a pilot with no baseline</td></tr>
+        <tr><td>Build it in-house</td><td>Full control</td><td>Needs engineers and an operations lead most teams do not have</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="prose after">
+    <p>What is missing is a product that does the unglamorous setup for you: measuring where you stand, deciding what the agent should do first, and proving what changed.</p>
+  </div>
+</RailSection>
+
+<RailSection id="how-it-works" n="04" label="How it works" class="manifesto">
+  <h2 class="lead">Assess, plan, run, measure. In that order, in the software.</h2>
+  <p>Most platforms start at "run." Veritir makes the first two steps part of the product, so a lean team gets the discipline of a large implementation without staffing one.</p>
+</RailSection>
+
+<RailSection id="assess" label="Step 1 · Assess">
+  <h2 class="lead-sm">A built-in AI readiness assessment</h2>
+  <div class="prose">
+    <p>Connect the platform read-only to your CRM and public website. It scores readiness across the four pressures and sends nothing to a student until your team has reviewed the result.</p>
+  </div>
+  <figure class="scorecard" aria-labelledby="scorecard-cap">
+    <figcaption id="scorecard-cap"><span>Readiness assessment</span><span>Illustrative output, not real data</span></figcaption>
+    <ul>
+      <li><span class="dim">Response time</span><span class="meter" data-level="2" role="img" aria-label="2 of 5"><i></i><i></i><i></i><i></i><i></i></span><span class="finding">Median first reply 19 hours. 31% of inquiries arrive outside office hours.</span></li>
+      <li><span class="dim">Staff workload</span><span class="meter" data-level="3" role="img" aria-label="3 of 5"><i></i><i></i><i></i><i></i><i></i></span><span class="finding">Reminders and status checks take about a third of counselor outreach.</span></li>
+      <li><span class="dim">Cost and tool overlap</span><span class="meter" data-level="3" role="img" aria-label="3 of 5"><i></i><i></i><i></i><i></i><i></i></span><span class="finding">Two tools send email. Two hold the texting history.</span></li>
+      <li><span class="dim">Funnel by population</span><span class="meter" data-level="3" role="img" aria-label="3 of 5"><i></i><i></i><i></i><i></i><i></i></span><span class="finding">Stage conversion measurable for three of five populations.</span></li>
+      <li><span class="dim">Knowledge sources</span><span class="meter" data-level="1" role="img" aria-label="1 of 5"><i></i><i></i><i></i><i></i><i></i></span><span class="finding">Three different deadlines published for the same program.</span></li>
+      <li><span class="dim">Data and integrations</span><span class="meter" data-level="2" role="img" aria-label="2 of 5"><i></i><i></i><i></i><i></i><i></i></span><span class="finding">8% duplicate records. Text consent missing for 4 in 10.</span></li>
+      <li><span class="dim">Governance and staff</span><span class="meter" data-level="4" role="img" aria-label="4 of 5"><i></i><i></i><i></i><i></i><i></i></span><span class="finding">Message approval is defined. AI disclosure wording and training are not.</span></li>
+    </ul>
+  </figure>
+  <div class="prose">
+    <p>You leave step one with a baseline and a ranked list of jobs an agent could take, ordered by value and by risk. Readiness is the common gap: only 56% of institutions in the UPCEA and EducationDynamics survey had a plan to train and support staff on AI tools. <a href="#src-upcea">[4]</a></p>
+  </div>
+</RailSection>
+
+<RailSection id="plan" label="Step 2 · Plan">
+  <h2 class="lead-sm">A pilot framework the software drafts for you</h2>
+  <div class="prose">
+    <p>From the assessment, the platform writes a pilot charter for your team to edit and sign. An agent cannot be switched on until these five questions have answers.</p>
+  </div>
+  <ol class="questions">
+    <li>Which one population, and which one job, comes first?</li>
+    <li>Where is the single current answer to each common question?</li>
+    <li>When does a person take over, and who is it?</li>
+    <li>What number, measured how, counts as success?</li>
+    <li>What result would make us stop?</li>
+  </ol>
+</RailSection>
+
+<RailSection id="run" label="Step 3 · Run" class="prose">
+  <h2 class="lead-sm">Pre-built agents across the enrollment funnel</h2>
+  <p>Each stage of the <a href="#lifecycle">enrollment flywheel</a> has an agent job that comes ready to use, with its trigger, message plan and human handoff defined. Pick the one the assessment ranked first, for one population, with a cap on how many students it reaches.</p>
+</RailSection>
+
+<RailSection id="measure" label="Step 4 · Measure" class="prose">
+  <h2 class="lead-sm">Results you can defend to a cabinet</h2>
+  <p>A scorecard reports each agent against the step-one baseline in plain units: replies within an hour, applications completed, hours of outreach handled. The method is shown next to every number. Those results set the starting point for the next turn of the <a href="#lifecycle">flywheel</a>.</p>
+</RailSection>
+
+<RailSection id="benefits" n="05" label="What you get">
+  <h2 class="lead-sm">One platform, four pressures answered</h2>
+  <div class="tablewrap">
+    <table class="schedule jobs">
+      <thead><tr><th scope="col">Pressure</th><th scope="col">What the platform does</th><th scope="col">What changes for your team</th></tr></thead>
+      <tbody>
+        <tr><td>Time</td><td>Agents reply, remind and follow up around the clock</td><td>Counselors spend their hours on conversations that need judgment</td></tr>
+        <tr><td>Cost</td><td>Works on your current CRM and flags overlapping tools</td><td>No migration to fund before you see a result</td></tr>
+        <tr><td>Personalization</td><td>Separate message plans and knowledge for each population</td><td>Adult, transfer and graduate prospects stop getting first-year answers</td></tr>
+        <tr><td>Integrations</td><td>Maps every system holding student contact history before launch</td><td>Agents read one current answer, and data problems surface early</td></tr>
+      </tbody>
+    </table>
+  </div>
+</RailSection>
+
+<RailSection id="who" n="06" label="Who it is for">
+  <h2 class="lead-sm">Built for lean enrollment teams</h2>
+  <ol class="principles">
+    <li><span class="n">Fit</span><h3>A good fit.</h3><p>You have a CRM in place, more students than counselors can reach, several populations to serve, and a leader who has to defend the numbers.</p></li>
+    <li><span class="n">Not yet</span><h3>Not a fit.</h3><p>You want to replace your CRM first, or you want agents to make admission or aid decisions. We do neither.</p></li>
+  </ol>
+</RailSection>
+
+<RailSection id="rules" n="07" label="Ground rules">
+  <h2 class="lead-sm">Ground rules for AI agents in admissions</h2>
+  <ol class="principles">
+    <li><span class="n">01</span><h3>Students know it is AI.</h3><p>Every agent says what it is, and offers a person.</p></li>
+    <li><span class="n">02</span><h3>Agents do not decide.</h3><p>No admission, aid or scholarship decision is made or implied by an agent.</p></li>
+    <li><span class="n">03</span><h3>People hold the gates.</h3><p>Staff can read every conversation, approve message plans and take over at any point.</p></li>
+    <li><span class="n">04</span><h3>Reversible by design.</h3><p>A capped pilot with written stop conditions respects shared governance.</p></li>
+  </ol>
+</RailSection>
+
+<RailSection id="faq" n="08" label="Questions">
+  <h2 class="lead-sm">Common questions about agentic enrollment</h2>
+  <dl class="faq">
+    {frontmatter.faq.map((item) => (
+      <div><dt>{item.q}</dt><dd>{item.a}</dd></div>
+    ))}
+  </dl>
+</RailSection>
+
+<RailSection id="early-access" n="09" label="Early access">
+  <div class="invite">
+    <div>
+      <span class="badge">Design partners</span>
+      <h3 class="invite-title">Start with the assessment.</h3>
+      <p>The platform is in design and not yet generally available. We are inviting a few enrollment teams to run the readiness assessment on their own data and shape what ships.</p>
+    </div>
+    <a class="textlink" href="mailto:tim@veritir.com?subject=Early%20access%3A%20enrollment%20agents">Request early access <span class="arrow" aria-hidden="true">→</span></a>
+  </div>
+  <ol class="sources">
+    <li id="src-aacrao">AACRAO, <a href="https://www.aacrao.org/news/november-december-2025-research-updates-and-news-faculty-views-on-transfer-rising-college-costs-and-more/">Admissions Staffing: The State of the Office</a>, October 2025 60-Second Survey.</li>
+    <li id="src-cupa">CUPA-HR, <a href="https://www.cupahr.org/?p=532">The Higher Ed Admissions Workforce</a>, April 2023.</li>
+    <li id="src-ct">Campus Technology, <a href="https://campustechnology.com/articles/2026/06/25/before-ai-fix-your-data.aspx">Before AI, Fix Your Data</a>, June 2026.</li>
+    <li id="src-upcea">UPCEA and EducationDynamics, <a href="https://www.educationdynamics.com/unignorable-data-ai-higher-ed-marketing-enrollment-management/">Marketing and Enrollment Management AI Readiness Report 2025</a>.</li>
+  </ol>
+</RailSection>

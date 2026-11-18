@@ -544,3 +544,427 @@ footer.site .wm {
   font-size: 1rem;
   color: var(--ink);
 }
+
+/* Enrollment AI agents guide */
+.lead-sm {
+  font-family: var(--display);
+  font-size: clamp(1.625rem, 3.2vw, 2.125rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin: 0 0 28px;
+  max-width: 28ch;
+  text-wrap: balance;
+}
+.principles li p a,
+.prose a[href^="#src"] {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.plain {
+  margin: 0 0 1.2em;
+  padding: 0;
+  list-style: none;
+  max-width: 62ch;
+}
+.plain li {
+  padding: 10px 0;
+  border-top: 1px solid var(--rule);
+  text-wrap: pretty;
+}
+.plain li:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+.prose p.aside {
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+.prose + .scorecard,
+.prose + .questions,
+.prose + .tablewrap {
+  margin-top: 28px;
+}
+.scorecard + .prose,
+.prose.after {
+  margin-top: 28px;
+}
+.scorecard {
+  margin: 28px 0 0;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+}
+.scorecard figcaption {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.scorecard figcaption span:first-child {
+  color: var(--accent);
+}
+.scorecard ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.scorecard li {
+  display: grid;
+  grid-template-columns: 11rem 5.5rem minmax(0, 1fr);
+  gap: 6px 20px;
+  align-items: center;
+  padding: 13px 18px;
+  border-top: 1px solid var(--rule);
+}
+.scorecard li:first-child {
+  border-top: 0;
+}
+.scorecard .dim {
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+.scorecard .finding {
+  color: var(--muted);
+  font-size: 0.9375rem;
+  text-wrap: pretty;
+}
+.meter {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3px;
+}
+.meter i {
+  height: 8px;
+  background: var(--rule);
+  border-radius: 1px;
+}
+.meter[data-level="1"] i:nth-child(-n + 1),
+.meter[data-level="2"] i:nth-child(-n + 2),
+.meter[data-level="3"] i:nth-child(-n + 3),
+.meter[data-level="4"] i:nth-child(-n + 4),
+.meter[data-level="5"] i:nth-child(-n + 5) {
+  background: var(--accent);
+}
+@media (max-width: 720px) {
+  .scorecard li {
+    grid-template-columns: minmax(0, 1fr) 5.5rem;
+  }
+  .scorecard .finding {
+    grid-column: 1 / -1;
+  }
+}
+.sources {
+  margin: 36px 0 0;
+  padding: 0 0 0 1.4em;
+  max-width: 70ch;
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+.sources li {
+  padding: 3px 0;
+}
+.sources li:target {
+  color: var(--ink);
+}
+@media (max-width: 720px) {
+  .schedule.jobs td:first-child {
+    white-space: normal;
+    padding-right: 12px;
+  }
+  .schedule.jobs {
+    font-size: 0.875rem;
+  }
+}
+h2.lead-sm {
+  font-weight: 400;
+}
+.lead-sm + .principles,
+.lead-sm + .tablewrap {
+  margin-top: 0;
+}
+.sub {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 40px 0 12px;
+}
+.faq {
+  margin: 0;
+  max-width: 66ch;
+}
+.faq div {
+  padding: 18px 0;
+  border-top: 1px solid var(--rule);
+}
+.faq div:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+.faq dt {
+  font-family: var(--display);
+  font-size: 1.375rem;
+  line-height: 1.25;
+  margin-bottom: 6px;
+}
+.faq dd {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  text-wrap: pretty;
+}
+.rt-hero p.hero-cta {
+  margin-top: 22px;
+  font-size: 1.0625rem;
+}
+.manifesto h2.lead {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(1.875rem, 3.8vw, 2.625rem);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.6em;
+  max-width: 24ch;
+  text-wrap: balance;
+}
+.prose h2.lead-sm {
+  margin-bottom: 16px;
+}
+
+/* Enrollment lifecycle: six stages across, stacked on small screens */
+.lifecycle {
+  padding-block: 60px;
+}
+.lc-head {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  gap: 44px;
+}
+.lc-head .lead-sm {
+  max-width: 36ch;
+  margin-bottom: 36px;
+}
+.lc {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-rows: repeat(5, auto);
+  background: var(--surface);
+  border: 1px solid var(--rule);
+}
+.lc li {
+  grid-row: span 5;
+  display: grid;
+  grid-template-rows: subgrid;
+  padding: 0 14px 4px;
+  border-right: 1px solid var(--rule);
+  position: relative;
+}
+.lc li:last-child {
+  border-right: 0;
+  background: var(--accent-soft);
+}
+.lc h3 {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  margin: 0;
+  padding: 16px 0 10px;
+}
+.lc h3 .n {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+/* arrow between stages */
+.lc li:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  top: 14px;
+  right: -9px;
+  width: 18px;
+  text-align: center;
+  background: var(--surface);
+  color: var(--accent);
+  font-size: 0.875rem;
+  z-index: 1;
+}
+.lc p {
+  margin: 0;
+  padding: 10px 0 12px;
+  border-top: 1px solid var(--rule);
+  font-size: 0.875rem;
+  line-height: 1.45;
+  text-wrap: pretty;
+}
+.lc p.lc-what {
+  color: var(--muted);
+}
+.lc p span {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.lc p.lc-agent {
+  font-weight: 600;
+}
+.lc p.lc-agent span {
+  color: var(--accent);
+  font-weight: 400;
+}
+@media (max-width: 900px) {
+  .lc-head {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .lc {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+  .lc li {
+    grid-row: auto;
+    display: block;
+    border-right: 0;
+    border-bottom: 1px solid var(--rule);
+    padding: 0 18px 4px;
+  }
+  .lc li:last-child {
+    border-bottom: 0;
+  }
+  .lc li:not(:last-child)::after {
+    content: "↓";
+    top: auto;
+    bottom: -11px;
+    right: auto;
+    left: 18px;
+  }
+}
+
+/* Enrollment flywheel */
+.flywheel {
+  display: grid;
+  grid-template-columns: minmax(0, 440px) minmax(0, 1fr);
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.fw-figure {
+  margin: 0;
+}
+.fw-figure svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.fw-ring {
+  fill: none;
+  stroke: var(--rule);
+  stroke-width: 2;
+}
+.fw-return {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 3;
+}
+.fw-arrow {
+  fill: var(--muted);
+}
+.fw-arrow-return {
+  fill: var(--accent);
+}
+.fw-node rect {
+  fill: var(--surface);
+  stroke: var(--rule);
+}
+.fw-node-last rect {
+  fill: var(--accent-soft);
+  stroke: var(--accent);
+}
+.fw-figure text {
+  text-anchor: middle;
+  fill: var(--ink);
+}
+.fw-n {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  fill: var(--accent) !important;
+}
+.fw-name {
+  font-family: var(--display);
+  font-size: 21px;
+}
+.fw-center {
+  font-family: var(--display);
+  font-size: 22px;
+}
+.fw-center-em {
+  font-style: italic;
+  fill: var(--accent) !important;
+}
+.fw-loops > p {
+  margin: 0 0 18px;
+  max-width: 52ch;
+  text-wrap: pretty;
+}
+.fw-loops ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.fw-loops li {
+  padding: 14px 0;
+  border-top: 1px solid var(--rule);
+}
+.fw-loops h3 {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: 1.375rem;
+  margin: 0 0 4px;
+}
+.fw-loops li p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9375rem;
+  text-wrap: pretty;
+}
+.fw-loops li p.fw-measure {
+  margin-top: 6px;
+  color: var(--ink);
+  font-size: 0.875rem;
+}
+.fw-measure span {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-right: 10px;
+}
+@media (max-width: 900px) {
+  .flywheel {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .fw-figure {
+    max-width: 440px;
+  }
+}
